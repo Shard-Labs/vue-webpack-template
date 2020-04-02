@@ -22,11 +22,21 @@ module.exports = {
                 )
             },
             {
-                test: /\.scss$/,
+                test: /\.s|css$/,
                 use: [
                     'vue-style-loader',
-                    'css-loader',
-                    'scss-loader'
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
                 ]
             }
         ]
@@ -49,5 +59,6 @@ module.exports = {
     ],
 
     devServer: {
+        inline: true
     }
 }

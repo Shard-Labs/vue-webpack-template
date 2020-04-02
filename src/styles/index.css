@@ -1,0 +1,17 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --link-color: #000;
+    --shadow-color: #8f8f8f;
+}
+
+.dark-theme {
+    --background-color: #f455;
+    --text-color: #fff;
+    --link-color: #fff;
+    --shadow-color: #f455;
+}
+
+a {
+    color: var(--link-color);
+}

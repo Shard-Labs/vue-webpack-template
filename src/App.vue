@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-      <h1>{{ message }}</h1>
-      Hello World
-      <ComponentA />
+      <!--   HEADER   -->
+      <Header />
+      <div class="container example">
+            <h1>{{ message }}</h1>
+            Hello World
+        </div>
   </div>
 </template>
 
 <script>
-import ComponentA from './components/ComponentA';
+import Header from './components/Header';
 
 export default {
   name: 'app',
@@ -17,7 +20,13 @@ export default {
     }
   },
   components: {
-      ComponentA
+      Header
   }
 }
 </script>
+
+<style lang="scss" scoped>
+    .example {
+        color: #ff4455;
+    }
+</style>

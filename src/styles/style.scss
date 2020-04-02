@@ -1,0 +1,17 @@
+// GLOBAL
+@import "reset";
+@import "variables";
+
+// COMPONENTS
+@import "components/header";
+
+body {
+    width: 100vw;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    width: 70vw;
+    margin: auto;
+}
